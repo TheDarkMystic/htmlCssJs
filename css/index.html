@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--To apply the same style to all <p> tags, we add a style in head section. 
+        This acts as a default style and can be overriden by indivial styles in the 
+        particular tags.
+        -->
+        
+    <style>
+        p{
+            color:red; 
+            background: black;
+
+        }
+    </style>
+
+
+    <!--Sometimes the style tag can get really lengthy if we include styles for all the 
+    tags in the header, better way is to create a seperate file called style.css and add
+    link to that file in the head tag-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p>CSS is awesome!</p>
+    <p style="color:blue">CSS is awesome!</p>
+    <p style="color:white; background: blue;">CSS is awesome!</p>
+
+
+    <!--check style.css to check div style. id uniquely identifies a specific tag. In 
+    below example if we do not mention id for second bix, it's stying will come from general div
+    style from style.css but using the sepcfic id we can give a seperate style for that box-->
+    <div>
+        I am a box
+    </div>
+    <div id="box">
+        I am a box
+    </div>
+
+
+    <!--id should be unique for a single tag, but lets say we want to provide a same style for 
+    multiple div tags but not all, then we can use class instead of id-->
+
+    <div class="boxes">
+        I am a box
+    </div>
+    <div class="boxes">
+        I am a box
+    </div>
+
+    <!--https://www.youtube.com/watch?v=_GTMOmRrqkU-->
+
+</body>
+</html>

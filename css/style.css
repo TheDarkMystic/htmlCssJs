@@ -1,0 +1,46 @@
+p{
+    color:red; 
+    background: black;
+    font-size: 20px;
+    font-style: italic;
+
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background: green;
+}
+
+
+#box{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.boxes{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    margin: 10px; /*leaves 10px space on 4 sides (around) of the box*/
+    padding:10px; /*padding is from inside of the box, so 
+    it will have same color as the box*/
+    border: 2px black solid;
+    
+    
+    /*float: left;
+    if above property is uncommented, the boxes will be aligned left to first box instead of
+    below first box 
+    */
+
+    
+    
+    /*
+    coordinates for a particular box can be mentioned using position:absolute prop
+
+    position:absolute;
+    top:0px;
+    left:0px;
+    */
+}
